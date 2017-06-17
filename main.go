@@ -6,8 +6,7 @@ import (
 )
 
 func main() {
-	// we (sep)arate each string with a " ", but not the first one.
-	sep := ""
+	sep := "" // we (sep)arate each string with a space, but not the first time.
 	for i := 1; i < len(os.Args); i++ {
 		fmt.Print(sep)
 		fmt.Print(os.Args[i])
